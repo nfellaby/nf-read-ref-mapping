@@ -33,7 +33,7 @@ process MINIMAP2_ALIGN {
     tag "$meta.id"
     label 'process_high'
 
-    container 'community.wave.seqera.io/library/minimap2:2.31--44560a16337ea9fd'
+    container 'community.wave.seqera.io/library/minimap2_samtools:183c79b1599baae5'
 
     input:
     tuple val(meta), path(reads), path(index)
