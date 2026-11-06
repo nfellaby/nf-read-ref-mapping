@@ -2,7 +2,7 @@ process MINIMAP2_INDEX {
     tag "${meta.id} (${meta.preset})"
     label 'process_high'
 
-    conda 'bioconda::minimap2=2.31'
+    container 'community.wave.seqera.io/library/minimap2:2.31--44560a16337ea9fd'
 
     input:
     tuple val(meta), path(fasta)
@@ -33,7 +33,7 @@ process MINIMAP2_ALIGN {
     tag "$meta.id"
     label 'process_high'
 
-    conda 'bioconda::minimap2=2.31 bioconda::samtools=1.25'
+    container 'community.wave.seqera.io/library/minimap2:2.31--44560a16337ea9fd'
 
     input:
     tuple val(meta), path(reads), path(index)
