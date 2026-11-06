@@ -1,6 +1,5 @@
 # nf-read-ref-mapping
-Maps Illumina and/or ONT reads to a per-sample reference with minimap2, then summarises how the
-mapped reads are distributed across each reference.
+Maps Illumina and/or ONT reads to a per-sample reference with minimap2, then summarises how the mapped reads are distributed across each reference.
 
 ## Samplesheet
 
