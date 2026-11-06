@@ -2,7 +2,7 @@ process BAM_STATS {
     tag "$meta.id"
     label 'process_single'
 
-    conda 'bioconda::samtools=1.25'
+    container 'community.wave.seqera.io/library/samtools:1.25--a253eb9139fd1fcd'
 
     input:
     tuple val(meta), path(bam), path(bai)
